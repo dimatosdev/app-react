@@ -1,13 +1,16 @@
 import './App.css';
-import Evento from './components/Evento';
-import Form from './components/Form';
+import OutherList from './components/OutherList';
+
+
 function App() {
+
+  const myItens = ['react', 'Vue', 'Angular']
+
   return (
     <div className="App">
-      <h1>Testando eventos</h1>
-      <Evento numero="1"/>
-      <Evento numero="2"/>
-      <Form/>
+      <h1>Renderização de listas</h1>
+      <OutherList itens={myItens}/>
+      <OutherList itens={[]}/>
     </div>
     
   );
